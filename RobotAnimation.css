@@ -93,7 +93,7 @@ position:absolute;
   border-top-right-radius:100px;
   border-bottom-left-radius:20px;
   border-bottom-right-radius:20px;
-  animation:blink 2s linear 2 both;
+  animation:blink 2s linear 5 both;
   transition:.3s;
 }
 .righteye{
@@ -111,7 +111,7 @@ position:absolute;
   border-top-right-radius:100px;
   border-bottom-left-radius:20px;
   border-bottom-right-radius:20px;
-  animation:blink 2s linear 2 both;
+  animation:blink 2s linear 5 both;
   transition:.3s;
 }
 

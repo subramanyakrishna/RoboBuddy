@@ -1,0 +1,167 @@
+h1{
+	text-align: center;
+	font-family: 'Bangers', cursive;
+	border-style:solid;
+    border-width:5px;  
+    border-color:red;
+
+}
+body{
+  background-color: lightgreen;
+}
+.robot{}
+
+.head ,.leftarm,.rightarm,.leftleg,.rightleg,.torso{
+	background-color: #a6a6a6;
+}
+
+.head { 
+	position:absolute;
+   top:0px;
+   left:0px;
+   right:0px;
+   bottom:150px;
+   margin:auto;
+   height:85px;
+   width:150px;
+   border-top-left-radius:73px;
+   border-top-right-radius:73px;
+   border-bottom-left-radius:10px;
+   border-bottom-right-radius:10px;
+} 
+
+.torso{
+	position:absolute;
+   top:70px;
+   left:0;
+   right:0;
+   bottom:0;
+   margin:auto;
+   height:120px;
+   width:145px;
+   border-top-left-radius:20px;
+   border-top-right-radius:20px;
+   border-bottom-left-radius:100px;
+   border-bottom-right-radius:100px;
+}
+
+.leftarm{
+   position:absolute;
+   top:60px;
+   left:0;
+   right:175px;
+   bottom:0;
+   margin:auto;
+   height:100px;
+   width:20px;
+   background:white;
+   border-top-left-radius:300px;
+   border-top-right-radius:40px;
+   border-bottom-left-radius:40px;
+   border-bottom-right-radius:300px;
+   transition:.3s;
+}
+.rightarm{
+   position:absolute;
+   top:60px;
+   left:175px;
+   right:0;
+   bottom:0;
+   margin:auto;
+   height:20px;
+   width:100px;
+   background:white;
+   border-top-left-radius:300px;
+   border-top-right-radius:40px;
+   border-bottom-left-radius:40px;
+   border-bottom-right-radius:300px;
+   transform: rotateZ(90deg);
+   transition:.3s;
+}
+.lefteye{
+position:absolute;
+  top:10px;
+  left:0;
+  right:50px;
+  bottom:0px;
+  margin:auto;
+  z-index:2;
+  height:25px;
+  width:40px;
+  background:white;
+  border-top-left-radius:100px;
+  border-top-right-radius:100px;
+  border-bottom-left-radius:20px;
+  border-bottom-right-radius:20px;
+  animation:blink 2s linear 2 both;
+  transition:.3s;
+}
+.righteye{
+  position:absolute;
+  top:10px;
+  left:50px;
+  right:0;
+  bottom:0px;
+  margin:auto;
+  z-index:2;
+  height:25px;
+  width:40px;
+  background:white;
+  border-top-left-radius:100px;
+  border-top-right-radius:100px;
+  border-bottom-left-radius:20px;
+  border-bottom-right-radius:20px;
+  animation:blink 2s linear 2 both;
+  transition:.3s;
+}
+
+@keyframes blink{
+0%{
+height:25px;
+}
+
+15%{
+height:20px;
+}
+
+25%{
+	height:10px; 
+}
+30%{
+	height: 5px
+}
+
+50%{
+height:1px;
+}
+
+
+70%{
+height:5px;
+}
+75%{
+	height: 10px;
+}
+
+85%{
+	height: 20px;
+}
+
+100%{
+height: 25px;
+}
+
+}
+
+
+@keyframes hand{
+0%{
+transform:translateY(-40px) rotateZ(45deg);
+} 
+50%{
+transform:translateY(0px) rotateZ(-0deg);
+}
+100%{
+transform:translateY(-40px) rotateZ(45deg);
+}
+}
